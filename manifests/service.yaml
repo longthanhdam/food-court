@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: food-court-fontend-service
+  namespace: food-court  # namespace the same deployement
+spec:
+  selector:
+    app: food-court-fontend-app  #  Pod choose Deployment label
+  ports:
+    - protocol: TCP
+      port: 80           # Port extenal
+      targetPort: 80    # Port in container
+  type: LoadBalancer     # LoadBalancer provide IP address
