@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: food-court-fontend-app
-        image: mmregistry.mmvietnam.com:5000/food_court-fontend:8
+        image: mmregistry.mmvietnam.com:5000/food_court-fontend:12
         ports:
         - containerPort: 80
       imagePullSecrets:
